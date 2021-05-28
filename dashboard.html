@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h3>LOAD TESTING</h3>
+<hr>
+
+<div>
+
+<form action = "{{ url_for('result') }}" method = "POST">
+        <input type="text" name="sonuc" class ="form-control" />
+        <br>
+        <input type="submit" class="btn btn-primary" value="Commen Run" />
+        
+</form>
+
+</div>
+<br>
+
+
+<div>
+
+<form action = "{{ url_for('tarama') }}" method = "POST">
+        <input type="text" name="portscan" class ="form-control"/>
+        <br>
+        <input type="submit"  class="btn btn-primary" value="Port Scan" />
+        
+</form>
+
+</div>
+
+
+<br>
+
+
+
+<div>
+<form action = "{{ url_for('fileupload') }}" method = "GET">
+        <input type="submit" class="btn btn-primary" value="File upload" />
+
+    </form>
+</div>
+
+<br>
+
+
+<p>{{portscan}}</p>
+
+
+
+
+{% endblock body %}

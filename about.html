@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="jumbotron text-center">
+<h3> Load (Yük) Testi Nedir ?</h3>
+<hr>
+<p>Load testi senaryoları genellikle test edilecek sistemin kullanıcı deneyimi tarafına en yakın olan
+kurum personeli ile geliştirilir. Bu personel bir sistem analisti veya iş birimi temsilcisi olabilir.
+Gerçekçi kullanım durumları göz önüne alınarak belirli uygulama kullanım senaryoları ortaya
+çıkarılır. Bu senaryolara toplam gerçekleştirilecek istekler içindeki oranları da verilebilir.
+ Load testi istekleri web uygulamaları için bir proxy kullanılarak kayıt edilir ve yük bindirirken
+kaydedilmiş olan bu istekler defalarca tekrar oynatılır.
+ Load testinin kapsamı genellikle belli bir uygulama ve sistemle kısıtlı olmakla birlikte yine de
+ağ üzerinde olumsuz etki doğurabilir. Load testinin canlı bir sistem üzerinde gerçekleştirilmesi
+halinde ise iş süreçlerinin olumsuz etkilenme riski daha da yüksek olacaktır. Bu nedenlerle load
+testlerinin planlanmasında da dikkatli olunmasında fayda bulunmaktadır.
+ Load testi sırasında hedef uygulama veya sistem ile iletişim halinde olunduğundan testi yapan
+taraf detaylı ölçümlere sahip olacaktır. Bu veriler kullanılarak istemci bakış açısıyla çeşitli
+performans istatistikleri raporlanır.
+ Load testi sırasında sistem yöneticilerinin de sunucu metriklerini takip etmesinde fayda
+bulunmaktadır. Bu şekilde sunucu üzerindeki kaynak kullanım istatistikleri de görülmüş olur
+ve bu istatistikler de load testi raporuna aktarılabilir. Test ekibi bu alanda sistem yöneticilerine
+destek olabilir. </p>
+
+</div>
+
+{% endblock body %}
